@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+nav{
+    position: relative;
+    background: #4e4eaf;
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li label {
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:8px;
+}
+/*hovers*/
+nav ul li label:hover{
+    background:#7272cf;
+}
+
+nav ul li:hover div{
+    display: table;
+}
+nav ul li div ul li a:hover {
+	color:#fff;
+}
+
+/*Submenus*/
+nav ul li div {
+	width:100px;
+	position: absolute;
+	background:#ccc;
+	box-sizing:border-box;
+	display:none;
+}
+nav ul li div ul{
+	width:100%;
+	border-right:50px solid rgba(255,255,255,.5);
+	box-sizing:border-box;
+	position: relative;
+}
+
+/*Botones*/
+.btn{
+	display: inline-block;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 3px;
+	text-decoration: none;
+	font-size: 12px;
+	color: black;
+	font-weight: bold;
+}
+.btn-add{
+	background-color: rgb(61, 249, 255);
+}
+.btn-edit{
+	background-color: rgb(249, 255, 61);
+}
+.btn-delete{
+	background-color: rgb(255, 61, 61);
+}
+
+/*Tablas*/
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 4px;
+}
+
+/*Elementos*/
+.form-css{
+	width: auto;
+	padding: 5px;
+	border: 1px solid black;
+}
+.form-element{
+	margin-bottom: 15px;
+}
+
+.ms{
+	margin-left: 10px;
+}
+.m{
+	margin: 10px;
+}
