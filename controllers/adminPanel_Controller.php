@@ -84,5 +84,11 @@
             $submenu = $modelo2->menuView();
             require_once("views/menu.php");//Enviamos información a vista de menu
         }
+
+        static function descripcion(){
+            $modelo = new Modelo(); // Clase para consulta de datos
+            $description = $modelo->descripcionItem();
+            echo json_encode($description);
+        }
     }
 ?>

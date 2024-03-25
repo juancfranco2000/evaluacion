@@ -42,5 +42,5 @@
             ?>
         </ul>
     </nav>
-    <div id="text-description">  </div>
+    <div class="m-5" id="text-description">  </div>
 <?php require_once('layouts/header.php'); ?>

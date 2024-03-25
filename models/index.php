@@ -122,5 +122,15 @@
             }
             return $this->data;//Retornamos datos de consulta para controlador
         }
+
+        //Consulta los detalles de descripcion
+        public function descripcionItem(){
+            $sql = "SELECT iditem, descripcion FROM items";
+            $res = $this->db->query($sql);
+            while($row = $res->FETCHALL(PDO::FETCH_ASSOC)){
+                $this->data[] = $row;   
+            }
+            return $this->data;//Retornamos datos de consulta para controladors
+        }
     }
 ?>
